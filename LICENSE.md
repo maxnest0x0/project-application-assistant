@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Max Nest
+Copyright (c) 2026 Maxim Nesterov, Veniamin Panteleev, Artem Druzhin, Egor Strezhnev, Lev Shepeta, Egor Belykh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
