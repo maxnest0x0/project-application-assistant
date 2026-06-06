@@ -1,4 +1,5 @@
 fastapi==0.136.1
+gigaam[longform] @ git+https://github.com/salute-developers/GigaAM.git@6e4b027c6fb554e09e8b9059b757a175295ab879
 gigachat==0.2.1
 mypy==2.1.0
 pydantic==2.13.4
