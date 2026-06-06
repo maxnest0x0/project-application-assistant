@@ -1,5 +1,5 @@
-const micButton = document.querySelector('.mic-button');
+const continueButton = document.querySelector('.continue-button');
 
-micButton.addEventListener('click', () => {
+continueButton.addEventListener('click', () => {
     window.location.href = 'page2.html';
 });
