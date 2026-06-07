@@ -6,6 +6,7 @@ from typing import Annotated
 
 import uvicorn
 from fastapi import FastAPI, Request, Response, Form, UploadFile, HTTPException
+from fastapi.staticfiles import StaticFiles
 from fastapi.exception_handlers import http_exception_handler
 from gigachat import GigaChat, RateLimitError
 from dotenv import load_dotenv
@@ -38,6 +39,8 @@ async def generate_from_audio(request: Request, idea: UploadFile) -> Application
     buffer = await idea.read()
     text = await asyncio.to_thread(transcriber.transcribe, buffer)
     return await generate(request, text)
+
+app.mount("/", StaticFiles(directory="web", html=True))
 
 @app.exception_handler(AgentError)
 async def agent_error_handler(request: Request, exc: AgentError) -> Response:

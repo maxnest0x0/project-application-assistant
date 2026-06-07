@@ -1,6 +1,9 @@
 from tempfile import NamedTemporaryFile
 
 import gigaam # type: ignore[import-untyped]
+from pyannote.audio.telemetry import set_telemetry_metrics
+
+set_telemetry_metrics(False) # Fixes unknown duration error
 
 class TranscriberError(Exception):
     pass

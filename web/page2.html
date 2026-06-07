@@ -7,46 +7,47 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-    <div class="page2-container GoR">
-
+    <div class="page2-container">
         <!-- Кнопка назад -->
-        <a href="index.html" class="back-button"><span>Назад</span></a>
-
+        <a href="/" class="back-button"><span>Назад</span></a>
         <!-- Верхние блоки -->
         <div class="grid">
             <!-- верхний ряд прямоугольников -->
             <div class="card">
-                <input type="text" class="output-input" placeholder="краткое название">
-            </div>
-
-            <div class="card">
-                <input type="text" class="output-input" placeholder="полное название">
+                <div class="card-title">Название</div>
+                <textarea id="title" class="output-input" readonly></textarea>
             </div>
             <div class="card">
-                <input type="text" class="output-input" placeholder="уровень сложности">
-            </div>
-        <!-- нижний ряд прямоугольников -->
-            <div class="card">
-                <input type="text" class="output-input" placeholder="описание">
+                <div class="card-title">Описание</div>
+                <textarea id="description" class="output-input" readonly></textarea>
             </div>
             <div class="card">
-                <input type="text" class="output-input" placeholder="цель">
+                <div class="card-title">Цель</div>
+                <textarea id="goal" class="output-input" readonly></textarea>
+            </div>
+            <!-- нижний ряд прямоугольников -->
+            <div class="card">
+                <div class="card-title">Результат</div>
+                <textarea id="result" class="output-input" readonly></textarea>
             </div>
             <div class="card">
-                <input type="text" class="output-input" placeholder="требуемый результат">
+                <div class="card-title">Критерии</div>
+                <textarea id="criteria" class="output-input" readonly></textarea>
+            </div>
+            <div class="card">
+                <div class="card-title">Количество участников</div>
+                <textarea id="max_participants" class="output-input" readonly></textarea>
             </div>
         </div>
-
         <!-- Средние кнопки -->
         <div class="middle">
             <!-- кнопка скачивания ответа нейронки в excel -->
-            <div class="big-card excel">Excel</div>
+            <div id="excel-btn" class="big-card excel">Excel</div>
             <!-- json файл для текста -->
-            <div class="big-card text">json</div>
+            <div id="json-btn" class="big-card text">JSON</div>
         </div>
-
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18/dist/xlsx.mini.min.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
