@@ -1,0 +1,60 @@
+@media (max-width: 1325px) {
+
+    .container,
+    .page2-container {
+        padding: 20px;
+    }
+
+    .search-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-input {
+        height: 60px;
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .action-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        height: auto;
+        min-height: 150px;
+    }
+
+    .middle {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .back-button,
+    .big-card {
+        font-size: 20px;
+        padding: 16px;
+    }
+
+    .action-btn.loading::after {
+        width: 24px;
+        height: 24px;
+        border-width: 3px;
+    }
+
+    .action-btn.recording::after {
+        width: 20px;
+        height: 20px;
+    }
+}
